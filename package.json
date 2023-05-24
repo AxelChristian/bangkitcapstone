@@ -1,0 +1,24 @@
+{
+  "name": "bangkitcapstone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AxelChristian/bangkitcapstone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AxelChristian/bangkitcapstone/issues"
+  },
+  "homepage": "https://github.com/AxelChristian/bangkitcapstone#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "firebase": "^9.22.0",
+    "firebase-admin": "^11.8.0"
+  }
+}
