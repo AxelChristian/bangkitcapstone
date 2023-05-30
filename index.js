@@ -1,5 +1,11 @@
 const express = require("express")
-const { uploadImg } = require('./Handler/ImgAPI')
+const { 
+    uploadImg,
+    showImg,
+    dataImg,
+    deleteImg,
+    updateImg
+} = require('./Handler/ImgAPI')
 const app = express()
 const port = 8080
 
@@ -19,6 +25,10 @@ app.get('/', (req, res) => {
 })
 
 app.post('/upload', multer.single('foto'), imgUpload.uploadToGcs, uploadImg)
+app.get('/show/:id', showImg)
+app.get('/data', dataImg)
+app.delete('/delete/:id', deleteImg)
+app.put('/update/:id', multer.single('foto'), imgUpload.uploadToGcs, updateImg)
 
 app.listen(port, () => {
     console.log(`Example app listening at http://localhost:${port}`)
