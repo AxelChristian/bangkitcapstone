@@ -1,0 +1,7 @@
+uvicorn
+fastapi
+gunicorn
+python-multipart
+tensorflow
+numpy
+keras
